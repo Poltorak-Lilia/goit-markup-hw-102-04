@@ -182,6 +182,8 @@ ol {
 .advantages-item {
   width: calc((100% - 3 * 24px) / 4);
 }
+.advantages-icon {
+}
 .advantages-hero {
   color: var(--secondary-text-color);
   font-size: 20px;
