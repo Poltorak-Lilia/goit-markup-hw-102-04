@@ -91,7 +91,17 @@ ol {
 .header-link:focus {
   color: var(--accent-text-color);
 }
-
+.header-link.active {
+  color: #404bbf;
+}
+.header-link.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
 .address-list {
   display: flex;
   gap: 40px;
@@ -188,6 +198,7 @@ ol {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
@@ -325,16 +336,21 @@ ol {
 .footer-social {
 }
 .footer-social-text {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding-bottom: 16px;
 }
 .footer-icon {
-  text-decoration: none;
   display: flex;
-  justify-content: center;
 
+  justify-content: center;
   gap: 16px;
 }
 .footer-social-item {
