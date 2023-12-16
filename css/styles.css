@@ -141,6 +141,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   padding: 188px 0;
 }
 
@@ -172,6 +173,7 @@ ol {
   border: none;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -197,6 +199,8 @@ ol {
 }
 .advantages-list {
   display: flex;
+  /* align-items: center; */
+
   gap: 24px;
 }
 .advantages-item {
@@ -212,6 +216,7 @@ ol {
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
+  margin-bottom: 8px;
 }
 .advantages-icon-icon {
 }
@@ -309,6 +314,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover {
   background-color: #404bbf;
@@ -506,9 +512,9 @@ li {
 .cards-item {
   border-top: none;
   width: calc((100% - 48px) / 3);
-  /* position: relative; */
-  /* border: 1px solid var(--cornflower, #e7e9fc); */
-}
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  
 .overlay-wrap {
   position: relative;
   overflow: hidden;
